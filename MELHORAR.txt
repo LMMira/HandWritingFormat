@@ -1,3 +1,4 @@
 Chamada ao WebService a devolver imagem para colocar numa <img>
+Apresentar mensagens pelos erros retornados dos webservices
 Imagem com scrols
 InfoIdioma
