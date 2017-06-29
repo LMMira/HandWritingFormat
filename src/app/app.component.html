@@ -1,0 +1,18 @@
+<md-toolbar color="primary">
+  <span class="example-spacer">{{title}}</span>
+</md-toolbar>
+<br /><br />
+<md-select [(ngModel)]="f_id" id="fontID" placeholder="Font" floatPlaceholder="always">
+  <md-option *ngFor="let i of f" [value]="i.id">{{ i.title }}</md-option>
+</md-select><br /><br />
+<md-input-container>
+  <input mdInput required [(ngModel)]="f_size" id="fontSize" maxlength="2" size="3" placeholder="Size" floatPlaceholder="always">
+</md-input-container><br />
+<input required type="color" [(ngModel)]="f_color" id="fontColor" placeholder="Color"><br /><br />
+<md-input-container class="full-width">
+  <textarea mdTextareaAutosize mdInput required [(ngModel)]="txt2conv" id="text2conv" placeholder="Text to convert" floatPlaceholder="never"></textarea>
+</md-input-container><br />
+<button md-raised-button id="btConv" (click)="formatText()">Format Text</button><br /><br />
+<md-card *ngIf="imgTxt">
+  <img md-card-image id="imgText" [src]="imgTxt">
+</md-card>

@@ -1,0 +1,3 @@
+Chamada ao WebService a devolver imagem para colocar numa <img>
+Imagem com scrols
+InfoIdioma
